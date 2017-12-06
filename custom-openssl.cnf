@@ -1,0 +1,24 @@
+[req]
+default_bits = 2048
+default_md = sha256
+req_extensions = req_ext
+distinguished_name = dn
+
+[dn]
+countryName = DE
+localityName = Koeln
+organizationName = Example GmbH
+organizationalUnitName = IT
+emailAddress = it.department@example.com
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = example.com
+DNS.2 = www.example.com
+DNS.3 = web01.servers.example.com
+IP.1 = 12.34.56.78
+IP.2 = 10.0.0.10
+IP.3 = 192.168.10.42
+
