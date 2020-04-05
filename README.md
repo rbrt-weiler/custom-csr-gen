@@ -20,8 +20,7 @@ Once the CSR and key have been generated, send the CSR to your Certificate Autho
 
 When the finished certificate has been returned to you, copy the private key and the certificate to the appropriate directories. Common directories are:
 
-  * `/etc/apache2/ssl`
-  * `/etc/ssl/certs` (certificate) and `/etc/ssl/private` (key)
+* `/etc/apache2/ssl`
+* `/etc/ssl/certs` (certificate) and `/etc/ssl/private` (key)
 
 Then edit the webserver configuration to use the new certificate and private key. Do not forget to reload the webserver daemon.
-
